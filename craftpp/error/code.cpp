@@ -6,7 +6,7 @@
 // Util errors
 //
 
-#include "error/code.hpp"
+#include "craftpp/error/code.hpp"
 
 namespace craftpp::error {
 

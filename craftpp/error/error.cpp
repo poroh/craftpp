@@ -6,8 +6,8 @@
 // Error library
 //
 
-#include "error/error.hpp"
-#include "string/string_view.hpp"
+#include "craftpp/error/error.hpp"
+#include "craftpp/string/string_view.hpp"
 
 namespace craftpp::error {
 

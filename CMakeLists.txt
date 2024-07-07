@@ -28,9 +28,9 @@ if(CODE_COVERAGE)
   endif()
 endif()
 
-add_subdirectory(src)
+add_subdirectory(craftpp)
 
-target_include_directories(craftpp PRIVATE ${CMAKE_SOURCE_DIR}/src)
+target_include_directories(craftpp PRIVATE ${CMAKE_SOURCE_DIR})
 
 install(TARGETS craftpp
   ARCHIVE DESTINATION lib

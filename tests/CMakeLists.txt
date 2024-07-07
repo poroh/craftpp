@@ -17,7 +17,7 @@ if(NOT googletest_POPULATED)
 endif()
 
 add_executable(${TEST_NAME} ${TEST_SOURCES})
-target_include_directories(${TEST_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/src)
+target_include_directories(${TEST_NAME} PRIVATE ${CMAKE_SOURCE_DIR})
 
 # Link test executable with library and testing framework
 target_link_libraries(${TEST_NAME} PRIVATE craftpp)

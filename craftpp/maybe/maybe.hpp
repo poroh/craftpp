@@ -22,10 +22,10 @@
 #include <variant>
 #include <type_traits>
 
-#include "types/tagged.hpp"
-#include "types/unit.hpp"
-#include "result/result.hpp"
-#include "error/code.hpp"
+#include "craftpp/types/tagged.hpp"
+#include "craftpp/types/unit.hpp"
+#include "craftpp/result/result.hpp"
+#include "craftpp/error/code.hpp"
 
 namespace craftpp::maybe {
 

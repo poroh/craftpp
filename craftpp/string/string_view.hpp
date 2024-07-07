@@ -12,7 +12,7 @@
 #include <utility>
 #include <sstream>
 #include <vector>
-#include "maybe/maybe.hpp"
+#include "craftpp/maybe/maybe.hpp"
 
 namespace craftpp::string {
 

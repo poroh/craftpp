@@ -9,7 +9,7 @@
 #include <gtest/gtest.h>
 #include <memory>
 #include <queue>
-#include "result/result.hpp"
+#include "craftpp/result/result.hpp"
 
 namespace craftpp::test {
 
