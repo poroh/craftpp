@@ -11,6 +11,7 @@ set(SUBLIBS
   maybe
   string
   binary
+  variant
 )
 
 add_library(craftpp)
