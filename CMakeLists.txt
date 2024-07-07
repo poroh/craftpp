@@ -5,7 +5,7 @@ project(craftpp)
 set(CMAKE_CXX_STANDARD 20)
 
 option(CODE_COVERAGE "Enable coverage reporting" OFF)
-option(ADDRESS_SANITIZER "Enable address sanitizer" ON)
+option(ADDRESS_SANITIZER "Enable address sanitizer" OFF)
 
 set(freewebrtc_VERSION_MAJOR 1)
 set(freewebrtc_VERSION_MINOR 0)
