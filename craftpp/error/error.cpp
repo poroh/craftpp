@@ -7,7 +7,7 @@
 //
 
 #include "craftpp/error/error.hpp"
-#include "craftpp/string/string_view.hpp"
+#include "craftpp/string/view.hpp"
 
 namespace craftpp::error {
 

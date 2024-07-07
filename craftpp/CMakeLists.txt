@@ -9,6 +9,8 @@ set(SUBLIBS
   error
   types
   maybe
+  string
+  binary
 )
 
 add_library(craftpp)
