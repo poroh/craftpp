@@ -15,7 +15,7 @@ enum class Code {
     value_required_in_maybe,
 };
 
-std::error_code make_error_code(Code) noexcept;
+std::error_code make_code(Code) noexcept;
 
 const std::error_category& error_category() noexcept;
 

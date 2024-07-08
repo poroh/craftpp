@@ -170,7 +170,7 @@ inline bool Maybe<T>::is_none() const {
 template<typename T>
 Maybe<T>::Result Maybe<T>::require() {
     if (is_none()) {
-        return make_error_code(error::Code::value_required_in_maybe);
+        return error::make_code(error::Code::value_required_in_maybe);
     }
     auto v = std::move(unwrap());
     m_value = None{};
