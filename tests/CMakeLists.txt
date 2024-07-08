@@ -3,6 +3,7 @@ set(TEST_NAME craftpp_tests)
 
 set(TEST_SOURCES
     result_result_tests.cpp
+    result_reduce_tests.cpp
 )
 
 include(FetchContent)

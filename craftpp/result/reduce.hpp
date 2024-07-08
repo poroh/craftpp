@@ -7,14 +7,19 @@
 //
 
 #include <craftpp/result/result.hpp>
+#include <craftpp/maybe/maybe.hpp>
+#include <iostream>
 
 namespace craftpp::result {
 
 template<typename Iter, typename Accumulator, typename Function>
 Result<Accumulator> reduce(Iter start, Iter end, Accumulator acc, Function f) {
     for (; start != end; ++start) {
-        if (auto next = f(std::move(acc), *start); next.is_err()) {
+        Result<Accumulator> next = f(std::move(acc), *start);
+        if (next.is_err()) {
             return next.unwrap_err();
+        } else {
+            acc = std::move(next.unwrap());
         }
     }
     return acc;
