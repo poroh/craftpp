@@ -88,7 +88,7 @@ private:
 template<typename T>
 Result<T> success(T&&) noexcept;
 
-using MaybeError = Result<Unit>;
+using MaybeError = Result<types::Unit>;
 MaybeError success() noexcept;
 
 // Create Result from the type. In FP it is full anaglogue of return
@@ -412,7 +412,7 @@ Result<T> success(T&& v) noexcept {
 }
 
 inline MaybeError success() noexcept {
-    return MaybeError{Unit::create()};
+    return MaybeError{types::Unit::create()};
 }
 
 template<typename T>

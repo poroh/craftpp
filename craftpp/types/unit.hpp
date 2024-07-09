@@ -8,7 +8,7 @@
 
 #pragma once
 
-namespace craftpp {
+namespace craftpp::types {
 
 struct Unit {
     using Self = Unit;

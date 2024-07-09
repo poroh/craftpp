@@ -30,7 +30,7 @@
 namespace craftpp::maybe {
 
 struct NoneTag{};
-using None = types::Tagged<Unit, NoneTag>;
+using None = types::Tagged<types::Unit, NoneTag>;
 
 template<typename T>
 class Maybe {

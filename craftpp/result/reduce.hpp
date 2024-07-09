@@ -30,7 +30,7 @@ MaybeError reduce(Iter start, Iter end, Function f) {
     auto wf = [&](auto&&, auto&& v) {
         return f(v);
     };
-    return reduce(start, end, Unit::create(), wf);
+    return reduce(start, end, types::Unit::create(), wf);
 }
 
 }
